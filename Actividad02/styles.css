@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 16px;
+    font-family: Arial, sans-serif;
+    background: #f2f4f8;
+    color: #20242c;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 28px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.intro {
+    text-align: center;
+    color: #5b6472;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 28px 0;
+}
+
+button {
+    border: 0;
+    border-radius: 6px;
+    padding: 11px 16px;
+    background: #245fbd;
+    color: white;
+    cursor: pointer;
+}
+
+button:disabled {
+    background: #9aa7ba;
+    cursor: not-allowed;
+}
+
+#status {
+    flex-basis: 100%;
+    text-align: center;
+    color: #465366;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.image-card {
+    min-width: 0;
+    padding: 14px;
+    border: 1px solid #dce1e8;
+    border-radius: 8px;
+}
+
+.image-card h2 {
+    font-size: 18px;
+    text-align: center;
+}
+
+canvas {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+    .images {
+        grid-template-columns: 1fr;
+    }
+}
